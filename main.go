@@ -45,7 +45,7 @@ func handleDnsRequest(w dns.ResponseWriter, r *dns.Msg) {
 		}
 	}
 
-	proxy("10.128.24.2:53", w, r)
+	proxy("1.1.1.1:53", w, r)
 }
 
 func proxy(addr string, w dns.ResponseWriter, req *dns.Msg) {
